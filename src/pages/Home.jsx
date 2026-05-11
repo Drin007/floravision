@@ -9,16 +9,15 @@ import Footer from "../components/Footer";
 const Home = () => {
   return (
     <div className="main">
-
       <div className="heroBg">
         <Navbar />
-        <Hero />
-        <Trendy />
+        <section id="home"><Hero /></section>
+        <section id="plants-type"><Trendy /></section>
       </div>
-      <Topselling />
+      <section id="more"><Topselling /></section>
       <Customerreview />
-      <BestO2 /> 
-      <Footer />
+      <BestO2 />
+      <section id="contact"><Footer /></section>
     </div>
   );
 };

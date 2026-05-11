@@ -2,8 +2,12 @@ import "../styles/Hero.css";
 import { FaPlayCircle, FaStar, FaStarHalfAlt, FaChevronRight } from "react-icons/fa";
 import AglaonemaPlant from "../assets/AglaonemaPlant.png";
 import RonnieHamill from "../assets/RonnieHamill.png";
+import {scrollTo } from "../utils/scrollTo";
 
 const Hero = () => {
+
+
+
   return (
     <section className="hero">
 
@@ -18,8 +22,8 @@ const Hero = () => {
 
         <div className="herobuttons">
 
-          <button className="buybtn">Buy Now</button>
-          <button className="demobtn">
+          <button className="buybtn" onClick={ () => scrollTo("more")} >Buy Now</button>
+          <button className="demobtn" onClick={() => scrollTo("plants-type")}>
 
             <FaPlayCircle size={48} color="white" /> Live Demo...
 

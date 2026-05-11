@@ -1,7 +1,10 @@
 import "../styles/Footer.css";
 import FooterPlant from "../assets/FooterPlant.png";
+import {scrollTo } from "../utils/scrollTo";
 
 const Footer = () => {
+
+
   return (
     <footer className="footer">
       <div className="footerTop">
@@ -25,9 +28,9 @@ const Footer = () => {
         <div className="footerLinks">
           <h4>Quick Link's</h4>
           <ul>
-            <li>Home</li>
-            <li>Types Of plants</li>
-            <li>Contact</li>
+            <li onClick = {() => scrollTo("home")}>Home</li>
+            <li onClick = {() => scrollTo("plants-type")}>Types Of plants</li>
+            <li onClick = {() => scrollTo("contact")}>Contact</li>
             <li>Privacy</li>
           </ul>
         </div>

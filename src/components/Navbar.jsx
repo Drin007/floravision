@@ -1,8 +1,10 @@
 import "../styles/Navbar.css";
 import { FiSearch, FiShoppingBag, FiMenu } from "react-icons/fi";
 import HeaderPlant from "../assets/HeaderPlant.png";
+import {scrollTo } from "../utils/scrollTo";
 
 const Navbar = () => {
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -10,10 +12,10 @@ const Navbar = () => {
       </div>
 
       <ul className="navlinks">
-        <li>Home</li>
-        <li>Plants Type</li>
-        <li>More</li>
-        <li>Contact</li>
+        <li onClick = {() => scrollTo("home")}>Home</li>
+        <li onClick = {()=> scrollTo("plants-type")}>Plants Type</li>
+        <li onClick = {() => scrollTo("more")}>More</li>
+        <li onClick = {() => scrollTo("contact") } >Contact</li>
       </ul>
 
       <div className="navIcons">
