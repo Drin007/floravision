@@ -1,5 +1,5 @@
 .trends {
-  padding: 80px;
+  padding: 60px; 
   overflow: visible; 
 }
 
@@ -8,65 +8,65 @@
   align-items: center;
   background:rgba(255,255,255,0.07);
   border: 1px solid rgba(243, 239, 239, 0.445); 
-  border-radius: 80px; 
-  padding: 50px 50px 80px 20px;
-  margin-bottom: 30px;
-  gap: 40px; 
+  border-radius: 60px;  
+  padding: 40px 40px 60px 16px;  
+  margin-bottom: 24px;  
+  gap: 32px; 
   overflow: visible; 
   position: relative;
   backdrop-filter:blur(10px);
 }
 
 .trendyplants.reverse {
-  margin: 90px 0px 0px 0px;
+  margin: 70px 0px 0px 0px;  
   flex-direction: row-reverse;
-  padding: 50px 50px 80px 20px
+  padding: 40px 40px 60px 16px;  
 }
 
 .plantImg {
-  width: 450px;
-  height: 450px;
-  border-radius: 16px;
+  width: 340px;  
+  height: 340px; 
+  border-radius: 14px; 
   flex-shrink: 0;
   object-fit: contain;
-  margin-top: -90px; 
-  margin-bottom: -20px;
+  margin-top: -70px;  
+  margin-bottom: -16px;  
   filter: drop-shadow(0 10px 30px rgba(0,0,0,0.6));
 }
 
 .carddata h3 {
-  font-size: 26px;
+  font-size: 20px; 
   font-weight: 600;
-  margin-bottom: 14px;
+  margin-bottom: 12px;  
 }
 
 .carddata p {
   color: #b0b0b0;
-  font-size: 15px;
+  font-size: 14px;  
   line-height: 1.7;
-  margin-bottom: 16px;
+  margin-bottom: 14px; 
 }
 
 .carddata span {
-  font-size: 22px;
+  font-size: 18px;  
   font-weight: 600;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 16px;  
 }
 
 .cardbtns {
   display: flex;
-  gap: 14px;
+  gap: 12px;  
   align-items: center;
 }
 
 .exploreBtn {
-  padding: 10px 28px;
+  padding: 8px 22px;  
   border-radius: 30px;
   border: 1px solid rgb(255, 255, 255);
   background: transparent;
   color: white;
-  font-size: 15px;
+  font-size: 14px;  
 }
 
 .exploreBtn:hover {
@@ -75,12 +75,12 @@
 }
 
 .cartbtn {
-  padding: 10px 14px;
-  border-radius: 10px;
+  padding: 8px 12px;  
+  border-radius: 8px;  
   border: 1px solid rgba(255, 255, 255, 0.677);
   background: transparent;
   color: white;
-  font-size: 16px;
+  font-size: 14px;  
 }
 
 .cartbtn:hover{
@@ -104,7 +104,7 @@
 
     .plantImg{
         width:100%;
-        height:280px;
+        height:240px;  
         margin-top:0;
     }
 

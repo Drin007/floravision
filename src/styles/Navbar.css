@@ -1,6 +1,6 @@
 .navbar{
     width:100%;
-    padding:14px 80px;   
+    padding:14px 60px; 
     position:absolute; 
     top:0;
     left:0;
@@ -13,21 +13,21 @@
 .logo{
     display:flex;
     align-items:center;
-    gap:12px;
-    font-size:30px;
+    gap:10px;  
+    font-size:22px;  
     font-weight:700;
 }
 
 .logo img{
-    width:38px;
-    height:38px;
+    width:32px;  
+    height:32px;
     object-fit:contain;
     display:block;
 }
 
 .navlinks{
     display:flex;
-    gap:45px;
+    gap:32px;  
     list-style:none;
 }
 
@@ -35,6 +35,7 @@
     cursor:pointer;
     transition:0.3s;
     color:#d8d8d8;
+    font-size:14px;  
 }
 
 .navlinks li:hover{
@@ -44,27 +45,23 @@
 .navIcons{
     display:flex;
     align-items:center;
-    gap:25px;
-    font-size:22px;
+    gap:18px;  
+    font-size:18px;  
 }
 
 .searchIcon:hover{
     color:#58c96a;
-    
     transform: scale(1.2); 
 }
 
 .bagIcon:hover{
-
     color:#58c96a;
     transform: scale(1.2); 
-
 }
 
 .menuIcon:hover{
     color:#58c96a;
     transform: scale(1.2); 
-
 }
 
 @media (max-width:768px){
@@ -78,7 +75,7 @@
     }
 
     .logo{
-        font-size:22px;
+        font-size:20px;
     }
 
     .navIcons{
