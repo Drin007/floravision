@@ -2,7 +2,7 @@
 
 Built a modern plant e commerce landing page built with **React + Vite**, featuring a dark botanical aesthetic, smooth UI components, and fully responsive design.
 
-![FloraVision Preview](./src/assets/heroPlant.png)
+![FloraVision Preview](./src/assets/FloraVisionPreview.png)
 
 ---
 
