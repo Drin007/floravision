@@ -36,7 +36,7 @@
 
 .plantcard p {
   font-size: 13px;  
-  color: #919090;
+  color: #c8c5c5;
   line-height: 1.6;
   margin-bottom: 14px;  
 }
@@ -50,6 +50,7 @@
 .plantcardBottom span {
   font-size: 16px;  
   font-weight: 600;
+  margin-right : 100px;
 }
 
 .plantcardBottom button {

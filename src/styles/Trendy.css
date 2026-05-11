@@ -37,11 +37,12 @@
 .carddata h3 {
   font-size: 20px; 
   font-weight: 600;
-  margin-bottom: 12px;  
+  margin-bottom: 12px; 
+  color:rgb(213, 210, 210); 
 }
 
 .carddata p {
-  color: #b0b0b0;
+  color: #c7c2c2;
   font-size: 14px;  
   line-height: 1.7;
   margin-bottom: 14px; 

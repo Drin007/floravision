@@ -1,7 +1,7 @@
 import "../styles/Trendy.css";
 import PL from "../assets/PlantainlLillies.png";
 import DP from "../assets/DeskPlant.png";
-
+import { LuShoppingBag } from "react-icons/lu";
 const Trendy = () => {
   return (
     <section className="trends">
@@ -15,7 +15,7 @@ const Trendy = () => {
           <span>Rs. 599/-</span>
           <div className="cardbtns">
             <button className="exploreBtn">Explore</button>
-            <button className="cartbtn">🛒</button>
+            <button className="cartbtn"><LuShoppingBag /> </button>
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@ const Trendy = () => {
           <span>Rs. 399/-</span>
           <div className="cardbtns">
             <button className="exploreBtn">Explore</button>
-            <button className="cartbtn">🛒</button>
+            <button className="cartbtn"><LuShoppingBag /></button>
           </div>
         </div>
       </div>

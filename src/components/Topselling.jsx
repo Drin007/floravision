@@ -7,7 +7,7 @@ import SansevieriaPlant from "../assets/SansevieriaPlant.png";
 import AgavePlant from "../assets/AgavePlant.png";
 import corneryellowTopRight from "../assets/corneryellowTopRight.png";
 import corneryellowBottomLeft from "../assets/corneryellowBottomLeft.png";
-
+import { LuShoppingBag } from "react-icons/lu";
 
 const Topselling = () => {
   return (
@@ -36,7 +36,7 @@ const Topselling = () => {
 
           <div className="plantcardBottom">
             <span>Rs. 300/-</span>
-            <button>🛒</button>
+            <button><LuShoppingBag /> </button>
           </div>
         </div>
 
@@ -55,7 +55,7 @@ const Topselling = () => {
 
           <div className="plantcardBottom">
             <span>Rs. 380/-</span>
-            <button>🛒</button>
+            <button><LuShoppingBag /></button>
           </div>
         </div>
 
@@ -68,7 +68,7 @@ const Topselling = () => {
 
           <div className="plantcardBottom">
             <span>Rs. 259/-</span>
-            <button>🛒</button>
+            <button><LuShoppingBag /></button>
           </div>
         </div>
 
@@ -88,7 +88,7 @@ const Topselling = () => {
 
           <div className="plantcardBottom">
             <span>Rs. 400/-</span>
-            <button>🛒</button>
+            <button><LuShoppingBag /></button>
           </div>
         </div>
 
@@ -108,7 +108,7 @@ const Topselling = () => {
 
           <div className="plantcardBottom">
             <span>Rs. 450/-</span>
-            <button>🛒</button>
+            <button><LuShoppingBag /></button>
           </div>
         </div>
 
@@ -124,7 +124,7 @@ const Topselling = () => {
 
           <div className="plantcardBottom">
             <span>Rs. 359/-</span>
-            <button>🛒</button>
+            <button><LuShoppingBag /></button>
           </div>
         </div>
       </div>
