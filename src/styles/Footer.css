@@ -1,0 +1,138 @@
+.footer {
+  padding: 80px 80px 40px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  margin-top: 40px;
+}
+
+.footerTop {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr; 
+  gap: 60px;
+  margin-bottom: 50px;
+}
+
+.brandLogo{
+  display:flex;
+  align-items:center;
+  gap:5px;
+  margin-bottom:16px;
+}
+
+.footerPlant{
+  width:55px;
+  height:55px;
+  object-fit:contain;
+}
+
+
+
+.footerBrand h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display:inline-block;
+}
+
+.footerBrand p {
+  font-size: 14px;
+  color: #888;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+.socials span {
+  font-size: 13px;
+  color: #fbfbfb;
+  cursor: pointer;
+}
+
+.socials span:hover {
+  color: rgb(185, 175, 175);
+}
+
+.footerLinks h4,
+.sendEmail h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footerLinks ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footerLinks ul li {
+  font-size: 14px;
+  color: grey;
+  cursor: pointer;
+}
+
+.footerLinks ul li:hover {
+  color: white;
+}
+
+.sendEmailInput {
+  display: flex;
+  gap: 10px;
+}
+
+.sendEmailInput input {
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.05);
+  color: white;
+  font-size: 14px;
+  outline: none;
+  flex: 1;
+}
+
+.sendEmailInput button {
+  padding: 12px 22px;
+  border-radius: 30px;
+  background: #3c8c47;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.footerBottom {
+  border-top: 1px solid rgba(222, 204, 204, 0.07);
+  padding-top: 24px;
+  text-align: right;
+}
+
+.footerBottom p {
+  font-size: 13px;
+  color: #f2ecec;
+}
+
+@media (max-width:768px){
+
+    .footer{
+        padding:40px 20px;
+    }
+
+    .footerTop{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .footerBottom{
+        text-align:center;
+    }
+
+    .sendEmailInput{
+        flex-direction:column;
+    }
+}

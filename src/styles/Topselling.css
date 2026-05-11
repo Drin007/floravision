@@ -1,0 +1,115 @@
+.topselling {
+  padding: 80px;
+}
+
+.plantsgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding-top: 60px; 
+}
+
+.plantcard {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(243,239,239,0.445);
+  border-radius: 30px; 
+  padding: 24px;
+  backdrop-filter: blur(10px);
+  overflow: visible; 
+  position: relative;
+}
+
+
+.plantCardImg {
+  
+  width: 100%;
+  height: 300px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  object-fit: contain;
+  margin-top: -80px; 
+}
+
+.plantcard h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.plantcard p {
+  font-size: 14px;
+  color: #919090;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.plantcardBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plantcardBottom span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.plantcardBottom button {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.896);
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.plantcardBottom button:hover {
+  border: 1px solid white;
+  transform: scale(1.4);
+}
+
+
+.sellWrap{
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 70px;
+}
+
+.sellWrap .sectionTitle{
+  margin-bottom: 0; 
+}
+
+.cornerFrame {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.cornerTopRight {
+  top: -8px;
+  right: -14px;
+}
+
+.cornerBottomLeft {
+  bottom: -8px;
+  left: -14px;
+}
+
+@media (max-width:768px){
+
+    .topselling{
+        padding:40px 20px;
+    }
+
+    .plantsgrid{
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+
+    .plantCardImg{
+        height:220px;
+    }
+}

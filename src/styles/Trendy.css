@@ -1,0 +1,114 @@
+.trends {
+  padding: 80px;
+  overflow: visible; 
+}
+
+.trendyplants {
+  display: flex;
+  align-items: center;
+  background:rgba(255,255,255,0.07);
+  border: 1px solid rgba(243, 239, 239, 0.445); 
+  border-radius: 80px; 
+  padding: 50px 50px 80px 20px;
+  margin-bottom: 30px;
+  gap: 40px; 
+  overflow: visible; 
+  position: relative;
+  backdrop-filter:blur(10px);
+}
+
+.trendyplants.reverse {
+  margin: 90px 0px 0px 0px;
+  flex-direction: row-reverse;
+  padding: 50px 50px 80px 20px
+}
+
+.plantImg {
+  width: 450px;
+  height: 450px;
+  border-radius: 16px;
+  flex-shrink: 0;
+  object-fit: contain;
+  margin-top: -90px; 
+  margin-bottom: -20px;
+  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.6));
+}
+
+.carddata h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.carddata p {
+  color: #b0b0b0;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.carddata span {
+  font-size: 22px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.cardbtns {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.exploreBtn {
+  padding: 10px 28px;
+  border-radius: 30px;
+  border: 1px solid rgb(255, 255, 255);
+  background: transparent;
+  color: white;
+  font-size: 15px;
+}
+
+.exploreBtn:hover {
+  transform: scale(1.2);
+  border:1px solid white;
+}
+
+.cartbtn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.677);
+  background: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+.cartbtn:hover{
+  transform: scale(1.2);
+  border:1px solid white;
+}
+
+@media (max-width:768px){
+
+    .trends{
+        padding:40px 20px;
+    }
+
+    .trendyplants,
+    .trendyplants.reverse{
+        flex-direction:column;
+        border-radius:30px;
+        padding:30px 20px;
+        text-align:center;
+    }
+
+    .plantImg{
+        width:100%;
+        height:280px;
+        margin-top:0;
+    }
+
+    .cardbtns{
+        justify-content:center;
+    }
+}
