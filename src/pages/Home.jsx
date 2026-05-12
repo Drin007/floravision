@@ -23,13 +23,15 @@ const trendyPlants = [
   {
     img: PlantainlLillies,
     title: "For Your Desks Decorations",
-    description: "I recently added a beautiful desk decoration plant to my workspace, and it has made such a positive difference!",
+    description:
+      "I recently added a beautiful desk decoration plant to my workspace, and it has made such a positive difference!",
     price: "Rs. 599/-",
   },
   {
     img: DeskPlant,
     title: "For Your Desks Decorations",
-    description: "The greenery adds a touch of nature and serenity to my desk, making it feel more inviting and calming",
+    description:
+      "The greenery adds a touch of nature and serenity to my desk, making it feel more inviting and calming",
     price: "Rs. 399/-",
   },
 ];
@@ -38,37 +40,43 @@ const topSellingPlants = [
   {
     img: AglaonemaPlant,
     name: "Aglaonema plant",
-    description: "The Aglaonema plant, commonly known as Chinese Evergreen known for its attractive foliage patterns.",
+    description:
+      "The Aglaonema plant, commonly known as Chinese Evergreen known for its attractive foliage patterns.",
     price: "Rs. 300/-",
   },
   {
     img: PlantainlLillies,
     name: "Plantain Lilies",
-    description: "Hostas are primarily grown for their lush, decorative leaves, which come in a wide variety of sizes.",
+    description:
+      "Hostas are primarily grown for their lush, decorative leaves, which come in a wide variety of sizes.",
     price: "Rs. 380/-",
   },
   {
     img: Cactus,
     name: "Cactus",
-    description: "It is known for their ability to thrive in arid environments.",
+    description:
+      "It is known for their ability to thrive in arid environments.",
     price: "Rs. 259/-",
   },
   {
     img: SwillCheesePlant,
     name: "Swiss cheese Plant",
-    description: "It is a popular tropical houseplant known for its distinctive, perforated leaves.",
+    description:
+      "It is a popular tropical houseplant known for its distinctive, perforated leaves.",
     price: "Rs. 400/-",
   },
   {
     img: SansevieriaPlant,
     name: "Sansevieria plant",
-    description: "It is a popular indoor plant admired for its striking appearance and low-maintenance nature.",
+    description:
+      "It is a popular indoor plant admired for its striking appearance and low-maintenance nature.",
     price: "Rs. 450/-",
   },
   {
     img: AgavePlant,
     name: "Agave plant",
-    description: "The Agave plant is a genus of succulent plants known for their striking rosette of thick, fleshy leaves.",
+    description:
+      "The Agave plant is a genus of succulent plants known for their striking rosette of thick, fleshy leaves.",
     price: "Rs. 359/-",
   },
 ];
@@ -100,10 +108,7 @@ const Home = () => {
       <div className="heroBg">
         <Navbar img={HeaderPlant} />
         <section id="home">
-          <Hero
-            img={AglaonemaPlant}
-            reviewer={RonnieHamill}
-          />
+          <Hero img={AglaonemaPlant} reviewer={RonnieHamill} />
         </section>
         <section id="plants-type">
           <Trendy plants={trendyPlants} />

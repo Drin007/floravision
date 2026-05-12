@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "../styles/Hero.css";
 import { FaPlayCircle, FaStar, FaStarHalfAlt, FaChevronRight } from "react-icons/fa";
 import { scrollTo } from "../utils/scrollTo";
@@ -13,6 +14,12 @@ const Hero = ({
   plantname = "Aglaonema plant",
   halfrate = true,
 }) => {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const handleArrowClick = () => {
+    setActiveSlide((prev) => (prev + 1) % 3);
+  };
+
   return (
     <section className="hero">
 
@@ -51,13 +58,16 @@ const Hero = ({
           <span className="PlantLabel">{plantlabel}</span>
           <h4>
             {plantname}
-            <FaChevronRight size={20} className="arrowIcon" />
+            <FaChevronRight size={20} className="arrowIcon" onClick={handleArrowClick} />
           </h4>
           <button className="PlantBuyBtn" onClick={() => scrollTo("more")}>Buy Now</button>
+
           <div className="PlantDots">
-            <span className="slide slideDash"></span>
-            <span className="slide"></span>
-            <span className="slide"></span>
+            { 
+              [0, 1, 2].map((i) => (
+              <span key={i} className={`slide ${i === activeSlide ? "slideDash" : ""}`} />
+            ))
+            }
           </div>
         </div>
       </div>

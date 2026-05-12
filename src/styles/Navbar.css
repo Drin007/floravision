@@ -66,23 +66,38 @@
     color:#58c96a;
     transform: scale(1.2); 
 }
+ 
+@media (max-width: 600px) {
+  .navbar {
+    padding: 14px 20px;
+  }
 
-@media (max-width:768px){
+  .navlinks {
+    display: none;
+  }
 
-    .navbar{
-        padding:14px 20px;
-    }
+  .logo {
+    font-size: 20px;
+  }
 
-    .navlinks{
-        display:none;
-    }
+  .navIcons {
+    gap: 12px;
+    font-size: 18px;
+  }
 
-    .logo{
-        font-size:20px;
-    }
+  .menuIcon {
+    display: flex;
+  }
+}
 
-    .navIcons{
-        gap:16px;
-        font-size:18px;
-    }
+
+
+@media (max-width: 1024px) and (min-width: 601px) {
+  .navbar {
+    padding: 14px 32px;
+  }
+
+  .navlinks {
+    gap: 20px;
+  }
 }

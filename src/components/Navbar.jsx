@@ -27,9 +27,9 @@ const Navbar = ({ img, brand = "FloraVision.", links }) => {
       </ul>
 
       <div className="navIcons">
-        <FiSearch className="searchIcon" />
-        <FiShoppingBag className="bagIcon" />
-        <BiMenuAltRight className="menuIcon" />
+        <FiSearch className="searchIcon"  onClick = {() => alert("Clicked search bar, backend required")}/>
+        <FiShoppingBag className="bagIcon" onClick = {() => {scrollTo("more"); alert("Clicked bag icon, backend required");}}/>
+        <BiMenuAltRight className="menuIcon" onClick = {() => alert("Clicked menu icon, not added functionality")}/>
       </div>
     </nav>
   );
