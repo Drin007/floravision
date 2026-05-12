@@ -1,27 +1,35 @@
 import "../styles/Navbar.css";
-import { FiSearch, FiShoppingBag, FiMenu } from "react-icons/fi";
-import HeaderPlant from "../assets/HeaderPlant.png";
-import {scrollTo } from "../utils/scrollTo";
+import { FiSearch, FiShoppingBag } from "react-icons/fi";
+import { scrollTo } from "../utils/scrollTo";
+import { FaCaretDown } from "react-icons/fa";
+import { BiMenuAltRight } from "react-icons/bi";
 
-const Navbar = () => {
+const Navbar = ({ img, brand = "FloraVision.", links }) => {
+  const navLinks = links || [
+    { label: "Home", target: "home" },
+    { label: "Plants Type", target: "plants-type", icon: <FaCaretDown /> },
+    { label: "More", target: "more" },
+    { label: "Contact", target: "contact" },
+  ];
 
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src={HeaderPlant} alt="Header Plant's Image" /> FloraVision.
+        <img src={img} alt="Header Plant's Image" /> {brand}
       </div>
 
       <ul className="navlinks">
-        <li onClick = {() => scrollTo("home")}>Home</li>
-        <li onClick = {()=> scrollTo("plants-type")}>Plants Type</li>
-        <li onClick = {() => scrollTo("more")}>More</li>
-        <li onClick = {() => scrollTo("contact") } >Contact</li>
+        {navLinks.map(({ label, target, icon }) => (
+          <li key={label} onClick={() => scrollTo(target)}>
+            {label} {icon}
+          </li>
+        ))}
       </ul>
 
       <div className="navIcons">
-        <FiSearch className="searchIcon"/>
-        <FiShoppingBag className ="bagIcon"/>
-        <FiMenu className="menuIcon"/>
+        <FiSearch className="searchIcon" />
+        <FiShoppingBag className="bagIcon" />
+        <BiMenuAltRight className="menuIcon" />
       </div>
     </nav>
   );

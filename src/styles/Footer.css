@@ -53,28 +53,28 @@
   color: rgb(185, 175, 175);
 }
 
-.footerLinks h4,
+.footerlinks h4,
 .sendEmail h4 {
   font-size: 14px; 
   font-weight: 600;
   margin-bottom: 16px; 
 }
 
-.footerLinks ul {
+.footerlinks ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.footerLinks ul li {
+.footerlinks ul li {
   font-size: 13px; 
   color: rgb(205, 197, 197);
   cursor: pointer;
   text-decoration: underline;
 }
 
-.footerLinks ul li:hover {
+.footerlinks ul li:hover {
   color: white;
 }
 

@@ -1,37 +1,44 @@
 import "../styles/Footer.css";
-import FooterPlant from "../assets/FooterPlant.png";
-import {scrollTo } from "../utils/scrollTo";
+import { scrollTo } from "../utils/scrollTo";
 
-const Footer = () => {
-
-
+const Footer = ({
+  img,
+  brand = "FloraVision.",
+  tagline = "From lush indoor greens to vibrant outdoor blooms, our plants are crafted to thrive and elevate your living environment.",
+  socials = [ "FB", "TW", "LI" ],
+  links = [ { label: "Home", target: "home" },
+    { label: "Types Of plants", target: "plants-type" },
+    { label: "Contact", target: "contact" },
+    { label: "Privacy", target: null },
+  ],
+  copyright = "FloraVision © all right reserve",
+}) => {
   return (
     <footer className="footer">
       <div className="footerTop">
+
         <div className="footerBrand">
-        
           <div className="brandLogo">
-            <img className="footerPlant" src={FooterPlant} alt="FloraVision's logo" />
-            <h3>FloraVision.</h3>
+            <img className="footerPlant" src={ img} alt={`${brand} logo`} />
+            <h3>{brand}</h3>
+
           </div>
-          <p>
-            "From lush indoor greens to vibrant outdoor blooms, our plants are
-            crafted to thrive and elevate your living environment."
-          </p>
+
+          <p>{tagline}</p>
+
           <div className="socials">
-            <span>FB</span>
-            <span>TW</span>
-            <span>LI</span>
+            {socials.map((s) => (
+              <span key={ s }>{s}</span>
+            ))}
           </div>
         </div>
 
-        <div className="footerLinks">
+        <div className="footerlinks">
           <h4>Quick Link's</h4>
           <ul>
-            <li onClick = {() => scrollTo("home")}>Home</li>
-            <li onClick = {() => scrollTo("plants-type")}>Types Of plants</li>
-            <li onClick = {() => scrollTo("contact")}>Contact</li>
-            <li>Privacy</li>
+            {links.map(({ label, target }) => (
+              <li key={label } onClick={() => target && scrollTo(target)}>{label}</li>
+            ))}
           </ul>
         </div>
 
@@ -39,13 +46,14 @@ const Footer = () => {
           <h4>For Every Update.</h4>
           <div className="sendEmailInput">
             <input type="email" placeholder="Enter Email" />
-            <button>Subscribe</button>
+            <button onClick={ () => alert("Submitted")} >Subscribe</button>
           </div>
         </div>
+
       </div>
 
-      <div className="footerBottom">
-        <p>FloraVision © all right reserve</p>
+      <div className="footerBottom" >
+        <p>{copyright}</p>
       </div>
     </footer>
   );

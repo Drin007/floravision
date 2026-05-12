@@ -1,23 +1,21 @@
 # 🌿 FloraVision
 
-Built a modern plant e commerce landing page built with **React + Vite**, featuring a dark botanical aesthetic, smooth UI components, and fully responsive design.
+A modern plant e-commerce landing page built with **React + Vite**, featuring a dark botanical aesthetic, smooth UI components, and fully responsive design. Components are fully prop-driven — all data and assets are managed from a single `Home.jsx` entry point.
 
 ![FloraVision Preview](./src/assets/FloraVisionPreview.png)
 
----
 
-##  Preview
+## Preview
 
 > A full-page plant store UI with hero section, product listings, customer reviews, and more — all on a rich dark green theme.
 
----
 
-##  Tech Stack
+## Tech Stack
 
-- **React 18** — Component-based UI
+- **React 18** — Component-based, prop-driven UI
 - **Vite** — Lightning-fast dev server & bundler
 - **CSS Modules** — Per-component scoped stylesheets
-- **React Icons** — Icon library (Fi, Fa sets)
+- **React Icons** — Icon library (Fi, Fa, Lu, Bi sets)
 - **Google Fonts** — Inter + Caveat typefaces
 
 ---
@@ -38,7 +36,7 @@ floravision/
 │   │   ├── BestO2.jsx
 │   │   └── Footer.jsx
 │   ├── pages/
-│   │   └── Home.jsx
+│   │   └── Home.jsx         # All data arrays & asset imports live here
 │   ├── styles/
 │   │   ├── index.css
 │   │   ├── App.css
@@ -49,6 +47,8 @@ floravision/
 │   │   ├── Customerreview.css
 │   │   ├── BestO2.css
 │   │   └── Footer.css
+│   ├── utils/
+│   │   └── scrollTo.js      # Smooth scroll helper
 │   ├── App.jsx
 │   └── main.jsx
 ├── index.html
@@ -87,37 +87,27 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 npm run build
 ```
 
-### Preview Production Build
+##  Deployment
 
-```bash
-npm run preview
-```
+This project is live on **Vercel** → [floravision-flame.vercel.app](https://floravision-flame.vercel.app)
 
----
+##  Features
 
-## 🌐 Deployment
-
-This project is deployed on **Vercel**.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
-
-To deploy your own:
-1. Push this repo to GitHub
-2. Import it on [vercel.com](https://vercel.com)
-3. Vercel auto-detects Vite — no config needed
-4. Hit **Deploy**
-
----
-
-## ✨ Features
-
-- **Hero Section** — Full screen background image with plant card and review snippet
+- **Hero Section** — Full-screen background image with plant card and review snippet
 - **Trendy Plants** — Alternating layout cards with floating plant images
 - **Top Selling** — 3 column product grid with price and cart button
-- **Customer Reviews** — 3-card review grid with star ratings and avatars
-- **Best O2 Plants** — Feature section highlighting air purifying plants
+- **Customer Reviews** — 3 card review grid with star ratings and avatars
+- **Best O2 Plants** — Feature section highlighting air-purifying plants with slide counter
 - **Footer** — Brand info, quick links, and email subscription input
-- **Responsive** — Mobile-friendly layout across all sections
+- **Responsive** — Mobile friendly layout across all sections
 
 
+##  Component Props
 
+All components are purely presentational. Assets and data are imported once in `Home.jsx` and passed down as props.
+
+
+## Notes
+
+- The hero background image (`heroPlant.png`) is intentionally kept as a CSS `background-image` on `.heroBg` in `App.css` — passing it as a prop caused rendering issues, so it's managed purely through CSS.
+- To update any plant image or review, edit the data arrays at the top of `src/pages/Home.jsx`.

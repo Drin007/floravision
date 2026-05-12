@@ -35,7 +35,7 @@
     display:inline-block;
 }
 
-.herobuttons{
+.herobtns{
     display:flex;
     align-items:center;
     gap:16px; 
@@ -102,7 +102,7 @@
     align-self:flex-start;
 }
 
-.heroReviewCard h4 {
+.heroReviewcard h4 {
     font-size:14px; 
     font-weight:600;
     margin-bottom:4px;
@@ -147,7 +147,7 @@
     margin-top:-60px;  
 }
 
-.PlantCardInfo {
+.plantcarddata {
     width:100%;
 }
 
@@ -159,7 +159,7 @@
     margin-left:22px;  
 }
 
-.PlantCardInfo h4 {
+.plantcarddata h4 {
     font-size:22px;  
     font-weight:600;
     margin-bottom:12px;  
@@ -239,7 +239,7 @@
         font-size:14px;  
     }
 
-    .herobuttons{
+    .herobtns{
         justify-content:center;
         flex-wrap:wrap;
     }
@@ -259,7 +259,7 @@
         height:240px;  
     }
 
-    .PlantCardInfo h4{
+    .plantcarddata h4{
         font-size:20px;  
     }
 }

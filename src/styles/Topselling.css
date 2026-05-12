@@ -19,6 +19,17 @@
   position: relative;
 }
 
+.plantcard:hover {
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(243,239,239,0.445);
+  border-radius:22px; 
+  padding: 18px; 
+  backdrop-filter: blur(10px);
+  overflow: visible; 
+  position: relative;
+
+}
+
 .plantCardImg {
   width: 100%;
   height: 220px;  
@@ -27,6 +38,15 @@
   object-fit: contain;
   margin-top: -60px;  
 }
+.plantCardImg:hover{
+  width: 110%;
+  height: 250px;  
+  border-radius: 12px;  
+  margin-bottom: 14px;  
+  object-fit: contain;
+  margin-top: -60px;  
+}
+
 
 .plantcard h4 {
   font-size: 16px;  
