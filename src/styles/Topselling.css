@@ -10,14 +10,16 @@
 }
 
 .plantcard {
-  height: 90%;
+  display: flex;          
+  flex-direction: column;  
   background: rgba(255,255,255,0.07);
   border: 1px solid rgba(243,239,239,0.445);
-  border-radius:22px; 
-  padding: 18px; 
+  border-radius: 22px;
+  padding: 18px;
   backdrop-filter: blur(10px);
-  overflow: visible; 
+  overflow: visible;
   position: relative;
+  min-height: 380px;  
 }
 
 .plantcard:hover {
@@ -59,7 +61,8 @@
   font-size: 13px;  
   color: #c8c5c5;
   line-height: 1.6;
-  margin-bottom: 14px;  
+  margin-bottom: 14px; 
+  flex: 1; 
 }
 
 .plantcardBottom {

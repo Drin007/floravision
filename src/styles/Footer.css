@@ -43,13 +43,13 @@
   gap: 14px; 
 }
 
-.socials span {
+.socials a {
   font-size: 12px; 
   color: #fbfbfb;
   cursor: pointer;
 }
 
-.socials span:hover {
+.socials a:hover {
   color: rgb(185, 175, 175);
 }
 

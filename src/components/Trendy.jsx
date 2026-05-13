@@ -1,5 +1,6 @@
 import "../styles/Trendy.css";
 import { LuShoppingBag } from "react-icons/lu";
+import {scrollTo} from "../utils/scrollTo.js";
 
 const TrendyCard = ({ img, title, description, price, reverse = false }) => (
   <div className={`trendyplants${reverse ? " reverse" : ""}`}>
@@ -9,8 +10,8 @@ const TrendyCard = ({ img, title, description, price, reverse = false }) => (
       <p>{description}</p>
       <span>{price}</span>
       <div className="cardbtns">
-        <button className="exploreBtn">Explore</button>
-        <button className="cartbtn"><LuShoppingBag /></button>
+        <button className="exploreBtn" onClick = {() => scrollTo("more")}>Explore</button>
+        <button className="cartbtn" onClick = {() => alert("my apologies, YET TO add ADD2CART")}><LuShoppingBag /></button>
       </div>
     </div>
   </div>
